@@ -51,7 +51,10 @@ var acceptpassword;
     for (var i=0; i<numberChoices.length; i ++){
     PossibleChoices.push(numberChoices[i])
    }
-  }else{
+  }else if (!upperCase
+    && !lowerCase
+    && !specialCharacter
+    && !nums){
 
     alert("You must accept one of the prompts to continue...")
     getLength()
