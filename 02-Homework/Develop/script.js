@@ -13,7 +13,7 @@ var PossibleChoices =[]
 
 var lengthChoice = parseInt(prompt("How many characters do you want?(Choose between 8 $ 128"));
 
-//function getLength(){
+function getLength(){
  console.log(lengthChoice);
  if
    (lengthChoice < 8 ||
@@ -28,15 +28,21 @@ var lengthChoice = parseInt(prompt("How many characters do you want?(Choose betw
    
 
    if (upperCase){
+     for (var i=0; i<upperChoices.length; i ++){
      PossibleChoices.push(upperChoices[i])
-  }else if (lowerCase){
+     }
+  } if (lowerCase){
+    for (var i=0; i<upperChoices.length; i ++){
     PossibleChoices.push(lowerChoices[i])
-  }else if (specialCharacter){
+    }
+  } if (specialCharacter){
+    for (var i=0; i<upperChoices.length; i ++){
     PossibleChoices.push(specialChoices[i])
+    }
   }
 
-  //} ;
-//getLength()
+  } ;
+getLength()
 
 function generatePassword(){
 var password="";
