@@ -13,7 +13,7 @@ var PossibleChoices =[]
 
 var lengthChoice = parseInt(prompt("How many characters do you want?(Choose between 8 $ 128"));
 
-function getLength(){
+//function getLength(){
  console.log(lengthChoice);
  if
    (lengthChoice < 8 ||
@@ -35,8 +35,8 @@ function getLength(){
     PossibleChoices.push(specialChoices[i])
   }
 
-  } ;
-getLength()
+  //} ;
+//getLength()
 
 function generatePassword(){
 var password="";
