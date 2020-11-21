@@ -23,6 +23,12 @@ function getLength(){
    upperCase = confirm("Do you want uppercase letters?")
    lowerCase = confirm("Do you want lowercase letters?")
    specialCharacter = confirm("Do you want special characters?")
+
+   if (!upperCase){
+     PossibleChoices = PossibleChoices.filter('A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z')
+   }
+
+
   
   } ;
 getLength()
