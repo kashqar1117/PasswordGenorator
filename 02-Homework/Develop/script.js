@@ -32,11 +32,11 @@ function getLength(){
      PossibleChoices.push(upperChoices[i])
      }
   } if (lowerCase){
-    for (var i=0; i<upperChoices.length; i ++){
+    for (var i=0; i<lowerChoices.length; i ++){
     PossibleChoices.push(lowerChoices[i])
     }
   } if (specialCharacter){
-    for (var i=0; i<upperChoices.length; i ++){
+    for (var i=0; i<specialChoices.length; i ++){
     PossibleChoices.push(specialChoices[i])
     }
   }
