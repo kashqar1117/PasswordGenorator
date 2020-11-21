@@ -12,7 +12,7 @@ var PossibleChoices =[]
 var acceptpassword;
 
 
-var lengthChoice = parseInt(prompt("How many characters do you want?(Choose between 8 $ 128"))
+var lengthChoice = parseInt(prompt("How many characters do you want?(Choose between 8 & 128"))
 
 function getLength(){
   
@@ -27,6 +27,7 @@ function getLength(){
   else 
    upperCase = confirm("Do you want uppercase letters?")
    lowerCase = confirm("Do you want lowercase letters?")
+   nums = confirm("Do you want numbers?")
    specialCharacter = confirm("Do you want special characters?")
    
 
@@ -45,6 +46,12 @@ function getLength(){
     PossibleChoices.push(specialChoices[i])
    }
    }
+
+   if (nums){
+    for (var i=0; i<numberChoices.length; i ++){
+    PossibleChoices.push(numberChoices[i])
+   }
+  }
 
    };
 
