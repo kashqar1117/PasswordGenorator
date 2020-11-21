@@ -23,6 +23,7 @@ var acceptpassword;
    {
      alert("invalid ammount, please choose between 8 & 128")
      getLength()
+     return;
    }
   else 
    upperCase = confirm("Do you want uppercase letters?")
