@@ -9,54 +9,57 @@ var upperChoices =['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','
 var specialChoices  = ["!","@", "#" , "$", "%", "^","&", "*"]
 var numberChoices= ['1', '2', '3', '4', '5', '6', '7', '8', '9' ]
 var PossibleChoices =[]
+var acceptpassword;
 
 
-var lengthChoice = parseInt(prompt("How many characters do you want?(Choose between 8 $ 128"));
+var lengthChoice = parseInt(prompt("How many characters do you want?(Choose between 8 $ 128"))
 
 function getLength(){
- console.log(lengthChoice);
- if
+  
+
+  if
    (lengthChoice < 8 ||
    lengthChoice > 128 )
    {
      alert("invalid ammount, please choose between 8 & 128")
      getLength()
-   }else 
+   }
+  else 
    upperCase = confirm("Do you want uppercase letters?")
    lowerCase = confirm("Do you want lowercase letters?")
    specialCharacter = confirm("Do you want special characters?")
    
 
-   if (upperCase){
-     for (var i=0; i<upperChoices.length; i ++){
+  if (upperCase){
+  for (var i=0; i<upperChoices.length; i ++){
      PossibleChoices.push(upperChoices[i])
-     }
-  } if (lowerCase){
-    for (var i=0; i<lowerChoices.length; i ++){
+   }
+   } 
+  if (lowerCase){
+  for (var i=0; i<lowerChoices.length; i ++){
     PossibleChoices.push(lowerChoices[i])
-    }
-  } if (specialCharacter){
+   }
+   } 
+  if (specialCharacter){
     for (var i=0; i<specialChoices.length; i ++){
     PossibleChoices.push(specialChoices[i])
-    }
-  }
+   }
+   }
 
-  } ;
+   };
+
+
 getLength()
 
 function generatePassword(){
-var password="";
-  lengthChoice;
+   var password="";
+    lengthChoice;
   
   for (var i = 0; i<lengthChoice;i++){
     var password = password+ PossibleChoices[Math.floor(Math.random()*PossibleChoices.length)];
     }
   return password;  
-};  
-
-
-
-
+    };  
 
 
 
@@ -74,3 +77,13 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+
+// function accept(){
+// acceptpassword = confirm("Are you satisfied with your password?")
+// if(!acceptpassword){
+
+
+// }
+
+// }
