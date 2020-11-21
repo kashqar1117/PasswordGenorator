@@ -4,9 +4,11 @@ let choice="";
 // var password;
 var length;
 var lengthChoice="";
-var PossibleChoices =['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z',"!","@", "#" , "$", "%", "^","&", "*", '1', '2', '3', '4', '5', '6', '7', '8', '9' ]
-
-var confirmPassword;
+var lowerChoices =['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+var upperChoices =['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+var specialChoices  = ["!","@", "#" , "$", "%", "^","&", "*"]
+var numberChoices= ['1', '2', '3', '4', '5', '6', '7', '8', '9' ]
+var PossibleChoices =[]
 
 
 var lengthChoice = parseInt(prompt("How many characters do you want?(Choose between 8 $ 128"));
@@ -23,18 +25,16 @@ function getLength(){
    upperCase = confirm("Do you want uppercase letters?")
    lowerCase = confirm("Do you want lowercase letters?")
    specialCharacter = confirm("Do you want special characters?")
+   
 
-   if (!upperCase){
-     PossibleChoices  = PossibleChoices.filter(function(character){
-       return character ='1', '2', '3', '4,', '5', '6', '7', '8', '9';
+   if (upperCase){
+     PossibleChoices.push(upperChoices[i])
+  }else if (lowerCase){
+    PossibleChoices.push(lowerChoices[i])
+  }else if (specialCharacter){
+    PossibleChoices.push(specialChoices[i])
+  }
 
-     })
-
-    
-   }
-
-
-  
   } ;
 getLength()
 
