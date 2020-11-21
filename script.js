@@ -11,7 +11,7 @@ var numberChoices= ['1', '2', '3', '4', '5', '6', '7', '8', '9' ]
 var PossibleChoices =[]
 var acceptpassword;
 
-  var lengthChoice = parseInt(prompt("How many characters do you want?(Choose between 8 & 128"))
+  var lengthChoice = parseInt(prompt("How many characters do you want?(Choose between 8 & 128)"))
 
 
   function getLength(){
